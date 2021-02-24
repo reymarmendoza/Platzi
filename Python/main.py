@@ -1,8 +1,10 @@
 from car import Car
+from account import Account
 
 if __name__ == "__main__":
-    car = Car()
-    car.license = "AMS234"
-    car.driver = "Carlos Alberto"
-    car.passenger = 4
-    print(vars(car)) # vars imprimi los atributos del objeto
+    car = Car("AMS132", Account("Carlos Alberto", "AMS234"))
+    print(vars(car)) # vars imprime los atributos del objeto
+    print(vars(car.driver))
+
+# en python self funciona como this en los otros lenguajes
+# __init__ se encarga de personalizar la instancia de la clase(constructor sin serlo propiamente)

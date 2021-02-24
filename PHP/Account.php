@@ -7,9 +7,9 @@ class Account {
     public $email;
     public $password;
 
-    public function __construct($valorName, $valorEmail){
-        $this -> name = $valorName;
-        $this -> email = $valorEmail;
+    public function __construct($name, $document){
+        $this->name = $name;
+        $this->document = $document;
     }
 }
 
